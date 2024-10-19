@@ -25,9 +25,9 @@ load_dotenv()
 
 class Config:
     def __init__(self) -> None:
-        self.API_ID: str = os.environ.get("21060976", None)
-        self.API_HASH: str = os.environ.get("b8b9e236dd578d07621f5a8174a891d9", None)
-        self.SESSION: str = os.environ.get("BAFBXXAABB7UIkEHGsrDzcwN1dR5m2p5qZgTjQ5LT6HK0cNEcC_-trIJ3aOnTyp3Jq9_bdxkjjeF2pcVJ3V37Mj7c-VJ-qWr-Vu6YQJFuLOz_bb5tQtqZeeBVxjP5pcPoiVv3LV1dEwT_CeADLJW0yzJv14UgTNo8mCBoIFj3xxUQTvAIr1OrDyhaQm4oIleKRLVLyD18sPi7T-5xhQ9yJfT8FUGuR3XbROqxWd23R91P8P-trM6doJzDd2BV0IGjxbgp7LXnlWEspFD8kMGIxbSeg_FZy8clhG1tpDotpqTyCv2nZijs6f0avXycXh2RhxX48ioFe0CNUpz8wa2zBWKB8KqagAAAAGRsXUgAA", None)
+        self.API_ID: str = os.environ.get("21060976",)
+        self.API_HASH: str = os.environ.get("b8b9e236dd578d07621f5a8174a891d9",)
+        self.SESSION: str = os.environ.get("BAFBXXAABB7UIkEHGsrDzcwN1dR5m2p5qZgTjQ5LT6HK0cNEcC_-trIJ3aOnTyp3Jq9_bdxkjjeF2pcVJ3V37Mj7c-VJ-qWr-Vu6YQJFuLOz_bb5tQtqZeeBVxjP5pcPoiVv3LV1dEwT_CeADLJW0yzJv14UgTNo8mCBoIFj3xxUQTvAIr1OrDyhaQm4oIleKRLVLyD18sPi7T-5xhQ9yJfT8FUGuR3XbROqxWd23R91P8P-trM6doJzDd2BV0IGjxbgp7LXnlWEspFD8kMGIxbSeg_FZy8clhG1tpDotpqTyCv2nZijs6f0avXycXh2RhxX48ioFe0CNUpz8wa2zBWKB8KqagAAAAGRsXUgAA",)
         self.BOT_TOKEN: str = os.environ.get("7847521628:AAHn0CiVxcWZF2mG0leMLzRTsCS134xz0PE", None)
         self.SUDOERS: list = [
             int(id) for id in os.environ.get("SUDOERS", "6739293472").split() if id.isnumeric()
@@ -45,8 +45,8 @@ class Config:
             else "video"
         )
         self.ADMINS_ONLY: bool = os.environ.get("ADMINS_ONLY", False)
-        self.SPOTIFY_CLIENT_ID: str = os.environ.get("31befwqzmxiik7rs5betkymkxeiy", None)
-        self.SPOTIFY_CLIENT_SECRET: str = os.environ.get("6nfdNPorHewU3f8H4oSgFC", None)
+        self.SPOTIFY_CLIENT_ID: str = os.environ.get("31befwqzmxiik7rs5betkymkxeiy",)
+        self.SPOTIFY_CLIENT_SECRET: str = os.environ.get("6nfdNPorHewU3f8H4oSgFC",)
 
 
 config = Config()
