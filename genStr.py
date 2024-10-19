@@ -19,8 +19,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>
 from pyrogram import Client
 
 
-api_id = int(input("API ID: "))
-api_hash = input("API HASH: ")
+api_id = int(input("21060976: "))
+api_hash = input("b8b9e236dd578d07621f5a8174a891d9: ")
 
 app = Client("my_app", api_id=api_id, api_hash=api_hash, in_memory=True)
 with app:
